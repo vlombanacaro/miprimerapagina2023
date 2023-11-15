@@ -296,3 +296,8 @@ button {
   color: rgb(0, 0, 0);
   background-color: rgb(121, 252, 95);
 }
+
+.greeting {
+  color: rgb(255, 94, 0);
+  font-size: 3em;
+}
