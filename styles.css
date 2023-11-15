@@ -1,0 +1,298 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Philosopher", sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  background-color: rgb(169, 255, 167);
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 2em;
+}
+
+header a i {
+  color: white;
+  font-size: 3em;
+  padding: 2em;
+}
+
+header nav ul {
+  display: flex;
+  gap: 2em;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul li a {
+  color: white;
+}
+
+.Contacto {
+  color: rgb(138, 8, 58);
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar {
+  height: 0vh;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  background: rgb(199, 147, 248);
+  text-align: center;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+.checkbtn {
+  padding: 2em;
+  text-align: center;
+  list-style: none;
+  display: flex;
+  color: rgb(0, 0, 0);
+  justify-content: space-between;
+}
+
+.ul menu {
+  gap: 2em;
+  color: rgb(0, 0, 0);
+}
+
+nav .seccion-3 {
+  display: flex;
+  background-color: antiquewhite;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+
+nav .seccion-4 {
+  display: inline;
+}
+
+seccion {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.seccion-1 {
+  display: flex;
+  background-color: antiquewhite;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+
+.seccion-1 img {
+  padding: 1em;
+}
+
+.seccion-2 img {
+  width: 100%;
+}
+
+.seccion-2 img {
+  width: 100%;
+}
+
+.seccion-3 {
+  display: flex;
+  background-color: antiquewhite;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2em;
+  padding: 2em;
+}
+
+.seccion-4 {
+  margin: 5px;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+}
+
+.seccion-3 img {
+  width: 50%;
+  justify-content: center;
+}
+
+.seccion-4 img {
+  width: 50%;
+  justify-content: center;
+}
+
+.trabajos {
+  border: 4px dotted rgb(131, 5, 5);
+  border-radius: 5%;
+  padding: 5px;
+  height: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.estudios {
+  border: 4px dotted rgb(131, 5, 5);
+  border-radius: 5%;
+  padding: 10px;
+  height: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+footer {
+  display: block;
+  background-color: crimson;
+  width: 100%;
+}
+
+#footer {
+  padding: 1em;
+}
+
+#footer nav ul li a {
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+div {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fa-solid fa-heart fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+  /* Aquí puedes escribir los estilos que se aplicarán en pantallas más
+  pequeñas */
+  body {
+    font-size: 12px;
+    color: darkgray;
+  }
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .trabajos {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .estudios {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+/* Estilos para pantallas más grandes (a partir de 769px) */
+@media (min-width: 769px) {
+  /* Aquí puedes escribir los estilos que se aplicarán en pantallas más
+  grandes */
+  body {
+    font-size: 19px;
+  }
+}
+
+form {
+  /* Centrar el formulario en la página */
+  margin: 0 auto;
+  width: 400px;
+  /* Esquema del formulario */
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Tamaño y alineación uniforme */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+  color: rgb(255, 9, 9);
+}
+
+input,
+textarea {
+  /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+     Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+  font: 1em sans-serif;
+  background-color: rgb(220, 231, 247);
+  color: darkblue;
+
+  /* Tamaño uniforme del campo de texto */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Hacer coincidir los bordes del campo del formulario */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* Destacado adicional para elementos que tienen el cursor */
+  border-color: #000;
+}
+
+textarea {
+  /* Alinear los campos de texto multilínea con sus etiquetas */
+  vertical-align: top;
+
+  /* Proporcionar espacio para escribir texto */
+  height: 5em;
+}
+
+.button {
+  /* Alinear los botones con los campos de texto */
+  padding-left: 90px; /* mismo tamaño que los elementos de la etiqueta */
+}
+
+button {
+  /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
+     entre las etiquetas y sus campos de texto */
+  margin-left: 0.5em;
+  color: rgb(0, 0, 0);
+  background-color: rgb(121, 252, 95);
+}
